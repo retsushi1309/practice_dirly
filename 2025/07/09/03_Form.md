@@ -23,7 +23,7 @@ def form_page(request):
     form = forms.UserInfo()
     print("form: ", form)
     return render(
-        request, 'formapp/formpage.html', context={
+        request, 'formpage.html', context={
         'form' : form
         }
     )
