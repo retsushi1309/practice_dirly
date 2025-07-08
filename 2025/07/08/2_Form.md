@@ -12,13 +12,13 @@
     # Create your views here.
     indexの処理
     def index(request):
-      return render(request, 'formapp/index.html')
+      return render(request, 'index.html')
 
     form_pageの処理
       def form_page(request):
     form = forms.UserInfo()
     return render(
-        request, 'formapp/formpage.html', context={
+        request, 'formpage.html', context={
         'form' : form
         }
     )
