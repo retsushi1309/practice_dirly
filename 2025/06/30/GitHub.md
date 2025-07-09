@@ -27,4 +27,7 @@
 
     GitHubにpushする
     git push origin main
-
+    
+# 一度クリーンにするコマンド
+git restore .
+git clean -fd
