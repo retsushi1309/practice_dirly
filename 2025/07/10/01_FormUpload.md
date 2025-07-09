@@ -20,7 +20,7 @@ def upload_sample(request):
         print(file_path)
         
 #一番上にosインポート追加
-from os
+import os
 
 #ファイルの保存
 def upload_sample(request):
@@ -32,8 +32,8 @@ def upload_sample(request):
         //ここから追加//
         file = fs.save(file_path, upload_file)
         uplode_file_url = fs.url(file)#ファルを保存するURL
-        return render(request, 'formapp/upload_file.html',
+        return render(request, 'upload_file.html',
             context ={
             'uploade_file_url': uploaded_file_url,
             })
-     return render(request, 'formapp/upload_file.html')
+     return render(request, 'upload_file.html')
