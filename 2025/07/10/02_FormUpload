@@ -1,0 +1,23 @@
+# FormApp urls.pyにpathを追加
+path('upload_sample/', views.upload_sample, name='upload_sample'),
+    
+# ファイルを保存するindexを作成
+  uploade_file.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <titile>Form Upload</title>
+    </head>
+    <body>
+        <form method="POST" enctype="muliport/form-deta">
+            {% csrf_token%}
+            <input type="file" name="upload_file"><br>
+            <input type="submit" value="保存">
+            </form>
+        {% if upload_file_url %}
+        <p>保存先:<a href="{{ uploade_file_url }}">{{ upload_file_url }}</a></p>
+        {% endif%}
+        
+    </body>
+</html>
