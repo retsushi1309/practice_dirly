@@ -31,3 +31,12 @@
 # 一度クリーンにするコマンド
 git restore .
 git clean -fd
+
+# pushできなかった場合
+リモート変更を取り込む
+git pull origin main --rebase
+もう一度push
+git push origin main
+
+
+
